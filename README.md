@@ -304,3 +304,147 @@
     </footer>
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming Forum</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #e0e0e0;
+        }
+
+        header {
+            background-color: #1f1f1f;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 2px solid #333;
+        }
+
+        nav {
+            margin: 10px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: #e0e0e0;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .form-container {
+            background-color: #1f1f1f;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            display: inline-block;
+        }
+
+        input[type="text"], input[type="email"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #333;
+            border-radius: 5px;
+            background-color: #121212;
+            color: #e0e0e0;
+        }
+
+        button {
+            background-color: #6200ea;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #3700b3;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .gallery img {
+            width: 200px;
+            height: 150px;
+            border-radius: 10px;
+            object-fit: cover;
+            border: 2px solid #333;
+        }
+
+        .discussion {
+            text-align: left;
+            margin: 20px auto;
+            max-width: 800px;
+            background-color: #1f1f1f;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .discussion h3 {
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Gaming Forum</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="discussion.html">Discussion</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Register</h2>
+        <div class="form-container">
+            <form action="/register" method="POST">
+                <input type="text" name="username" placeholder="Username" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="password" name="password" placeholder="Password" required>
+                <button type="submit">Register</button>
+            </form>
+        </div>
+
+        <h2>Gaming Gallery</h2>
+        <div class="gallery">
+            <img src="https://via.placeholder.com/200x150" alt="Gaming Tournament 1">
+            <img src="https://via.placeholder.com/200x150" alt="Gaming Tournament 2">
+            <img src="https://via.placeholder.com/200x150" alt="Gaming Tournament 3">
+        </div>
+
+        <h2>Latest Discussions</h2>
+        <div class="discussion">
+            <h3>Topic 1: Best Strategies in FPS Games</h3>
+            <p>Join the discussion about the best strategies to dominate FPS games. Share your tips and tricks!</p>
+        </div>
+        <div class="discussion">
+            <h3>Topic 2: Upcoming Tournaments</h3>
+            <p>Discuss the most exciting upcoming gaming tournaments and events. Who are you rooting for?</p>
+        </div>
+    </main>
+</body>
+</html>
